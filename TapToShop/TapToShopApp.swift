@@ -11,7 +11,8 @@ import SwiftUI
 struct TapToShopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            ItemList()
         }
     }
 }
