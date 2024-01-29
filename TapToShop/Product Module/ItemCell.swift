@@ -38,15 +38,15 @@ struct ItemCell: View {
                     Spacer()
                     Image(systemName: "star.fill")
                         .foregroundColor(.yellow)
-                    Text(String(format: "%2f", item.rating?.rate ?? ""))
+                    Text(String(format: "%.1f", item.rating?.rate ?? ""))
                 }
                 
                 Text(item.description ?? "")
                 HStack{
                     
                     Text(item.price?.convertToCurrency() ?? "")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 14.0))
+                        .foregroundColor(.blue)
+                        .font(.system(size: 20.0, weight: .semibold))
                     Spacer()
                     Button("Buy") {
                         

@@ -18,7 +18,9 @@ struct ItemList: View {
                                                   
     var body: some View {
         
-        Group {
+        NavigationView {
+            
+            Group {
                 
                 if (_viewModel.viewModelStatus == .success) {
                     
@@ -26,25 +28,29 @@ struct ItemList: View {
                         List(_viewModel.items, id: \.id)  { item in
                             
                             ItemCell(item: item)
-                        
+                            
                         }
                     }
-                                    
+                    
                 }else {
                     VStack {
-                        Image(systemName: "globe")
-                            .imageScale(.large)
-                            .foregroundStyle(.tint)
-                        Text("loading items!")
+    
+                        Text("loading products!")
                     }
+                    
+                }
+            }.padding()
+                .onAppear(perform: {
+                    _viewModel.getItems()
+                })
             
+            
+                .navigationTitle("Products")
+                .navigationBarTitleDisplayMode(.large)
+
+        }
             }
-        }.padding()
-        .onAppear(perform: {
-            _viewModel.getItems()
-        })
-        
-    }
+    
         
 }
 
