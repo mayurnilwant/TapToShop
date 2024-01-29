@@ -26,7 +26,7 @@ struct ItemList: View {
                     
                     Section {
                         List(_viewModel.items, id: \.id)  { item in
-                            NavigationLink(destination: Text("ItemName")) {
+                            NavigationLink(destination: ItemDetailView(item: item)) {
                                 ItemCell(item: item)
                             }
                         }
