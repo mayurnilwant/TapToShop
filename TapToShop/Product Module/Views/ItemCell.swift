@@ -32,6 +32,7 @@ struct ItemCell: View {
                 Text(item.title ?? "")
                     .font(.system(size: 20.0,weight: .semibold, design: .default))
                     .foregroundStyle(Color.black)
+                    .frame(maxHeight: 40.0)
                 
                 HStack {
                     Text(item.category ?? "")
@@ -42,11 +43,13 @@ struct ItemCell: View {
                 }
                 
                 Text(item.description ?? "")
+                        .frame(maxHeight: 70.0)
                 HStack{
                     
                     Text(item.price?.convertToCurrency() ?? "")
                         .foregroundColor(.blue)
                         .font(.system(size: 20.0, weight: .semibold))
+                        
                     Spacer()
                     Button("Buy") {
                         
