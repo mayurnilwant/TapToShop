@@ -8,6 +8,24 @@
 import Foundation
 
 
+struct Rating : Decodable {
+    
+    let rate: Double
+    let count: Int
+    
+    enum CodingKeys: CodingKey {
+        case rate
+        case count
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.rate = try container.decode(Double.self, forKey: .rate)
+        self.count = try container.decode(Int.self, forKey: .count)
+    }
+}
+
+
 struct Item: Identifiable,Decodable {
     
     let id: Int?
@@ -16,6 +34,7 @@ struct Item: Identifiable,Decodable {
     let category: String?
     let description: String?
     let image: String?
+    let rating: Rating?
     
     enum CodingKeys: String, CodingKey {
         
@@ -25,6 +44,7 @@ struct Item: Identifiable,Decodable {
         case category = "category"
         case description = "description"
         case image = "image"
+        case rating = "rating"
         
         
     }
@@ -38,6 +58,7 @@ struct Item: Identifiable,Decodable {
         self.category = try? container.decode(String.self, forKey: .category)
         self.description = try? container.decode(String.self, forKey: .description)
         self.image = try? container.decode(String.self, forKey: .image)
+        self.rating = try? container.decode(Rating.self, forKey: .rating)
     }
     
 }
