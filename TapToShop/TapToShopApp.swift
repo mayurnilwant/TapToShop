@@ -12,7 +12,8 @@ struct TapToShopApp: App {
     var body: some Scene {
         WindowGroup {
             
-            ItemList()
+          let itemListViewModel  = ItemViewModel(service: ItemListservice(withEndPoint: ClothsResource(httpOperationType: .getAll), andHeader: [:]))
+            ItemList(_viewModel: itemListViewModel)
         }
     }
 }

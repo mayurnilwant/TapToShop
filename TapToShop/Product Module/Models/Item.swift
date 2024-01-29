@@ -10,7 +10,7 @@ import Foundation
 
 struct Rating : Decodable {
     
-    let rate: Double
+    @Rate var rate: Double
     let count: Int
     
     enum CodingKeys: CodingKey {
