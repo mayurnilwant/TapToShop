@@ -26,15 +26,14 @@ struct ItemList: View {
                     
                     Section {
                         List(_viewModel.items, id: \.id)  { item in
-                            
-                            ItemCell(item: item)
-                            
+                            NavigationLink(destination: Text("ItemName")) {
+                                ItemCell(item: item)
+                            }
                         }
                     }
                     
                 }else {
                     VStack {
-    
                         Text("loading products!")
                     }
                     

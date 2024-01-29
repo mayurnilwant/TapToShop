@@ -55,7 +55,7 @@ struct ItemCell: View {
                     .background(.blue)
                     .font(.system(size: 12.0, weight: .semibold))
                     .foregroundColor(.white)
-                    .clipShape(.capsule)
+                    .clipShape(.capsule(style: .continuous))
                     
                 }
             }
