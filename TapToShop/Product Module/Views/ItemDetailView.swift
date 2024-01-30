@@ -24,11 +24,10 @@ struct ItemDetailView: View {
     
     var body: some View {
         
-        Image(systemName: "star.slash.fill")
-            .resizable()
-            .frame(width: 100.0, height: 200.0)
+        AsyncImageView(downLoadHandler: ImageDownLoader(imageUrlString: item.image ?? ""))
+            .frame(width: 150.0, height: 300.0)
             .aspectRatio(contentMode: .fill)
-        VStack(alignment: .leading,spacing: 10.0) {
+        VStack(alignment: .leading,spacing: 20.0) {
             Text(item.title ?? "")
                 .font(.system(size: 18.0, weight: .semibold))
                 .foregroundColor(Color.black)
@@ -56,13 +55,14 @@ struct ItemDetailView: View {
         HStack {
             Circle()
                 .frame(width: 10, height: 10)
-                .background(.gray)
+                .background(Color.gray)
             Text(totalReviews)
-                .foregroundStyle(Color.gray)
+                .foregroundColor(.gray)
         }
 
     }
         .padding(20.0)
+        Spacer()
 
         BottomPriceAndBuyBarView(price: item.price ?? 0)
             .padding([.leading, .trailing], 10.0)

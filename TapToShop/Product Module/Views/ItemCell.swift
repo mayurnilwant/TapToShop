@@ -50,7 +50,7 @@ struct ItemCell: View {
                     
                     Text(item.price?.convertToCurrency() ?? "")
                         .foregroundColor(.blue)
-                        .font(.system(size: 20.0, weight: .semibold))
+                        .font(.system(size: 15.0, weight: .semibold))
                         
                     Spacer()
                     Button("Buy") {

@@ -11,6 +11,7 @@ struct BottomPriceAndBuyBarView: View {
     
     let price: Double
     
+    @available(iOS 15.0, *)
     var body: some View {
         
         HStack {
