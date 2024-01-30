@@ -12,6 +12,7 @@ Item List                                                                       
 - SWIFTUI
 - ASYNC IMAGE DOWNLOADER
 - COMBINE
+- Async/Await
   
 
 
