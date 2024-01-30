@@ -1,5 +1,5 @@
 # TapToShp Mobile App
-### This app showcases item/product list.
+### This app showcases an item/product list.
 ### When the user taps a particular item, it takes it to the product detail screen.
 
 Item List                                                                                                        |  Product List
