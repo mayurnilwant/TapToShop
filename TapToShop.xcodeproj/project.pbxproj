@@ -14,6 +14,7 @@
 		E625E4152B670A4400CB9DD2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4142B670A4400CB9DD2 /* Utility.swift */; };
 		E625E4182B67573B00CB9DD2 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4172B67573B00CB9DD2 /* ItemDetailView.swift */; };
 		E625E41A2B675FC100CB9DD2 /* BottomPriceAndBuyBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4192B675FC100CB9DD2 /* BottomPriceAndBuyBarView.swift */; };
+		E625E41E2B687C0500CB9DD2 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E41D2B687C0500CB9DD2 /* ImageDownLoader.swift */; };
 		E69E34AF2B63727300C02167 /* TapToShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E34AE2B63727300C02167 /* TapToShopApp.swift */; };
 		E69E34B12B63727300C02167 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E34B02B63727300C02167 /* ItemListView.swift */; };
 		E69E34B32B63727500C02167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69E34B22B63727500C02167 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		E625E4142B670A4400CB9DD2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E625E4172B67573B00CB9DD2 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		E625E4192B675FC100CB9DD2 /* BottomPriceAndBuyBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPriceAndBuyBarView.swift; sourceTree = "<group>"; };
+		E625E41D2B687C0500CB9DD2 /* ImageDownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoader.swift; sourceTree = "<group>"; };
 		E69E34AB2B63727300C02167 /* TapToShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapToShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69E34AE2B63727300C02167 /* TapToShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToShopApp.swift; sourceTree = "<group>"; };
 		E69E34B02B63727300C02167 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E625E4142B670A4400CB9DD2 /* Utility.swift */,
+				E625E41D2B687C0500CB9DD2 /* ImageDownLoader.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				E625E40B2B65422F00CB9DD2 /* ItemListservice.swift in Sources */,
 				E69E34B12B63727300C02167 /* ItemListView.swift in Sources */,
 				E625E4182B67573B00CB9DD2 /* ItemDetailView.swift in Sources */,
+				E625E41E2B687C0500CB9DD2 /* ImageDownLoader.swift in Sources */,
 				E69E34BE2B63732B00C02167 /* HttpHandler.swift in Sources */,
 				E625E4152B670A4400CB9DD2 /* Utility.swift in Sources */,
 				E625E4122B67030200CB9DD2 /* ItemCell.swift in Sources */,

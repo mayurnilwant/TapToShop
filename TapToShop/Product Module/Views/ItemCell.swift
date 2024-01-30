@@ -23,10 +23,12 @@ struct ItemCell: View {
         VStack (spacing: 10){
             
             HStack {
-                Image(systemName: "star.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 60.0, height: 60.0)
+//                Image(systemName: "star.fill")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 60.0, height: 60.0)
+                
+                AsyncImageView(downLoadHandler: ImageDownLoader(imageUrlString: item.image ?? ""))
                 VStack (alignment: .leading, spacing: 15){
                 
                 Text(item.title ?? "")
